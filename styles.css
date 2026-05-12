@@ -1,6 +1,6 @@
 /* ============================================================
    SOUL PATH ASTROLOGY — Shared Stylesheet
-   v4 — reverted to original gold #C9A86A, no glows
+   v5 — warm rich painterly gold #BC9437, no effects
    ============================================================ */
 
 :root {
@@ -11,8 +11,8 @@
   --ink-soft: #4A4133;
   --ink-mute: #7A6F5C;
   --gold: #A88347;
-  --gold-light: #C9A86A;
-  --gold-bright: #DDBE7E;
+  --gold-light: #BC9437;
+  --gold-bright: #D4AF55;
   --night: #2D2150;
   --night-deep: #1A0E33;
   --night-glow: #5D3B7C;
