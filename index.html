@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soul Path Astrology Studio — Marianne Hayes</title>
+<meta name="description" content="Soul-centered astrology readings with Marianne Hayes. Decode your birth chart and come home to who you truly are.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="main-nav" id="mainNav">
+  <a href="index.html" class="logo">
+    <svg class="logo-mark" viewBox="0 0 80 100" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="logoSky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#3D2A5C"/>
+          <stop offset="55%" stop-color="#5D3B6E"/>
+          <stop offset="85%" stop-color="#8C4A6B"/>
+          <stop offset="100%" stop-color="#3D2854"/>
+        </linearGradient>
+        <radialGradient id="saturnGrad" cx="40%" cy="40%" r="60%">
+          <stop offset="0%" stop-color="#E0C896"/>
+          <stop offset="100%" stop-color="#A88347"/>
+        </radialGradient>
+      </defs>
+      <path d="M 8 95 L 8 35 Q 8 5 40 5 Q 72 5 72 35 L 72 95 Z" 
+            fill="url(#logoSky)" stroke="#C9A86A" stroke-width="1.2"/>
+      <path d="M 12 92 L 12 36 Q 12 9 40 9 Q 68 9 68 36 L 68 92" 
+            fill="none" stroke="#C9A86A" stroke-width="0.4" opacity="0.5"/>
+      <g fill="#F1E8D2">
+        <circle cx="20" cy="22" r="0.6" opacity="0.7"/>
+        <circle cx="58" cy="18" r="0.5" opacity="0.6"/>
+        <circle cx="62" cy="32" r="0.8" opacity="0.9"/>
+        <circle cx="18" cy="38" r="0.5" opacity="0.6"/>
+        <circle cx="22" cy="55" r="0.7" opacity="0.7"/>
+        <circle cx="14" cy="70" r="0.5" opacity="0.5"/>
+        <circle cx="65" cy="58" r="0.6" opacity="0.7"/>
+        <circle cx="55" cy="68" r="0.5" opacity="0.6"/>
+      </g>
+      <g fill="#F1E8D2" opacity="0.95">
+        <path d="M 56 24 L 56.6 26 L 58.5 26.5 L 56.6 27 L 56 29 L 55.4 27 L 53.5 26.5 L 55.4 26 Z"/>
+        <path d="M 24 30 L 24.4 31.2 L 25.6 31.5 L 24.4 31.8 L 24 33 L 23.6 31.8 L 22.4 31.5 L 23.6 31.2 Z"/>
+        <path d="M 50 42 L 50.4 43 L 51.4 43.3 L 50.4 43.6 L 50 44.5 L 49.6 43.6 L 48.6 43.3 L 49.6 43 Z"/>
+      </g>
+      <ellipse cx="40" cy="45" rx="13" ry="2.5" fill="none" stroke="#C9A86A" stroke-width="0.9"/>
+      <ellipse cx="40" cy="45" rx="13" ry="2.5" fill="none" stroke="#DDBE7E" stroke-width="0.4" opacity="0.6"/>
+      <circle cx="40" cy="45" r="6.5" fill="url(#saturnGrad)"/>
+      <ellipse cx="40" cy="45" rx="13" ry="2.5" fill="none" stroke="#C9A86A" stroke-width="0.9" 
+               stroke-dasharray="9 30" stroke-dashoffset="-6"/>
+      <path d="M 9 82 Q 22 76 38 80 Q 52 84 71 78 L 71 95 L 9 95 Z" 
+            fill="#3D2854" opacity="0.6"/>
+      <path d="M 9 86 Q 22 82 38 84 Q 52 86 71 83" 
+            fill="none" stroke="#C9A86A" stroke-width="0.3" opacity="0.4"/>
+    </svg>
+    <div>
+      <div class="logo-text">Soul Path Astrology</div>
+      <span class="logo-sub">Soul Work · Birth Charts</span>
+    </div>
+  </a>
+  <button class="menu-toggle" id="menuToggle">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#readings">Readings</a></li>
+    <li><a href="free-guide.html">Free Guide</a></li>
+    <li><a href="#testimonials">Praise</a></li>
+    <li><a href="#readings" class="nav-cta">Book a Reading</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="stars" id="stars"></div>
+  <div class="hero-content">
+    <div>
+      <div class="eyebrow">Soul-Centered Astrology</div>
+      <h1>Come home to <em>who you truly are.</em></h1>
+      <p class="hero-tagline">
+        Decode your birth chart with Marianne Hayes—a heart-led astrologer 
+        who blends soul-centered insight with traditional craft to help you 
+        live in alignment with your nature.
+      </p>
+      <div class="hero-ctas">
+        <a href="#readings" class="btn-primary">Book a reading</a>
+        <a href="free-guide.html" class="btn-text">Free Moon Guide →</a>
+      </div>
+    </div>
+    <div class="hero-wheel">
+      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="wheelGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#C9A86A" stop-opacity="0.3"/>
+            <stop offset="100%" stop-color="#C9A86A" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <circle cx="200" cy="200" r="195" fill="url(#wheelGlow)"/>
+        <circle cx="200" cy="200" r="180" fill="none" stroke="#C9A86A" stroke-width="0.5" opacity="0.6"/>
+        <circle cx="200" cy="200" r="150" fill="none" stroke="#C9A86A" stroke-width="0.4" opacity="0.5"/>
+        <circle cx="200" cy="200" r="100" fill="none" stroke="#C9A86A" stroke-width="0.4" opacity="0.4"/>
+        <circle cx="200" cy="200" r="60" fill="none" stroke="#C9A86A" stroke-width="0.4" opacity="0.5"/>
+        <g stroke="#C9A86A" stroke-width="0.4" opacity="0.4">
+          <line x1="200" y1="20" x2="200" y2="380"/>
+          <line x1="20" y1="200" x2="380" y2="200"/>
+          <line x1="73" y1="73" x2="327" y2="327"/>
+          <line x1="327" y1="73" x2="73" y2="327"/>
+          <line x1="110" y1="34" x2="290" y2="366"/>
+          <line x1="290" y1="34" x2="110" y2="366"/>
+          <line x1="34" y1="110" x2="366" y2="290"/>
+          <line x1="34" y1="290" x2="366" y2="110"/>
+        </g>
+        <g font-family="Cormorant Garamond, serif" font-size="18" fill="#C9A86A" text-anchor="middle">
+          <text x="200" y="42" opacity="0.85">♈</text>
+          <text x="290" y="65" opacity="0.85">♉</text>
+          <text x="345" y="125" opacity="0.85">♊</text>
+          <text x="365" y="208" opacity="0.85">♋</text>
+          <text x="345" y="285" opacity="0.85">♌</text>
+          <text x="290" y="340" opacity="0.85">♍</text>
+          <text x="200" y="365" opacity="0.85">♎</text>
+          <text x="110" y="340" opacity="0.85">♏</text>
+          <text x="55" y="285" opacity="0.85">♐</text>
+          <text x="35" y="208" opacity="0.85">♑</text>
+          <text x="55" y="125" opacity="0.85">♒</text>
+          <text x="110" y="65" opacity="0.85">♓</text>
+        </g>
+        <circle cx="200" cy="200" r="6" fill="#C9A86A"/>
+        <circle cx="200" cy="200" r="14" fill="none" stroke="#C9A86A" stroke-width="0.6" opacity="0.6"/>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<!-- QUOTE STRIP -->
+<div class="quote-strip">
+  <p>"Don't ask what the world needs. Ask what makes you come alive, and go do it. Because what the world needs is people who have come alive."</p>
+  <cite>— Howard Thurman</cite>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image">
+        <svg class="about-ornament" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <g fill="#A88347">
+            <path d="M 20 4 L 21.5 18.5 L 36 20 L 21.5 21.5 L 20 36 L 18.5 21.5 L 4 20 L 18.5 18.5 Z"/>
+          </g>
+        </svg>
+        <div class="about-image-frame">
+          <img src="images/marianne.jpg" alt="Marianne Hayes, founder of Soul Path Astrology Studio">
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="section-label">The Astrologer</div>
+        <h2>Hi, I'm Marianne—a <em>heart-led</em> astrologer and writer.</h2>
+        <p>
+          Understanding my own birth chart was the key that unlocked everything for me. 
+          It allowed me to work <strong>with</strong> my true nature instead of against it.
+        </p>
+        <p>
+          I blend soul-centered and traditional astrology with intuitive insight to help 
+          you decode your chart and finally come home to yourself. My readings aren't 
+          about prediction—they're about <strong>recognition</strong>.
+        </p>
+        <p>
+          Recognition of the wisdom your chart has been quietly holding for you all along.
+        </p>
+        <div class="signature">— Marianne</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES with pink dream background -->
+<section class="services with-bg" id="readings">
+  <div class="container">
+    <div class="services-header">
+      <div class="section-label">Work With Me</div>
+      <h2>Readings designed to <em>illuminate.</em></h2>
+      <p class="lede">Choose the path that meets you where you are—from a focused snapshot to a full soul journey.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <span class="service-icon">☉</span>
+        <h3>Astro <em>Snapshot</em></h3>
+        <div class="service-price">Starting at $125</div>
+        <p>A focused 60-minute reading exploring the core of your chart—Sun, Moon, Rising, and your soul's calling.</p>
+        <ul class="service-features">
+          <li>60-minute live session</li>
+          <li>Recording to keep</li>
+          <li>Follow-up notes</li>
+        </ul>
+        <a href="astro-snapshot.html" class="service-cta">Learn More →</a>
+      </div>
+      <div class="service-card featured">
+        <span class="featured-tag">Most Loved</span>
+        <span class="service-icon">☽</span>
+        <h3>Soul <em>Blueprint</em> Reading</h3>
+        <div class="service-price">Starting at $275</div>
+        <p>The full journey. A deep dive into your chart's hidden architecture—your purpose, gifts, and soul lessons.</p>
+        <ul class="service-features">
+          <li>90-minute live session</li>
+          <li>Written soul report</li>
+          <li>30-day email support</li>
+          <li>Personalized practice rituals</li>
+        </ul>
+        <a href="soul-blueprint.html" class="service-cta">Learn More →</a>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">✦</span>
+        <h3>Year <em>Ahead</em> Forecast</h3>
+        <div class="service-price">Starting at $195</div>
+        <p>Map the energetic terrain of your upcoming year through transits, progressions, and lunar cycles.</p>
+        <ul class="service-features">
+          <li>75-minute live session</li>
+          <li>Custom transit timeline</li>
+          <li>Key date calendar</li>
+        </ul>
+        <a href="year-ahead.html" class="service-cta">Learn More →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BIRTH CHART EXPLAINER -->
+<section class="explainer">
+  <div class="container">
+    <div class="explainer-grid">
+      <div class="chart-illustration">
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="chartGrad" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#A88347" stop-opacity="0.08"/>
+              <stop offset="100%" stop-color="#A88347" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <circle cx="200" cy="200" r="180" fill="url(#chartGrad)"/>
+          <circle cx="200" cy="200" r="170" fill="none" stroke="#A88347" stroke-width="0.8" opacity="0.9"/>
+          <circle cx="200" cy="200" r="135" fill="none" stroke="#A88347" stroke-width="0.5" opacity="0.6"/>
+          <circle cx="200" cy="200" r="85" fill="none" stroke="#A88347" stroke-width="0.5" opacity="0.6"/>
+          <g stroke="#A88347" stroke-width="0.5" opacity="0.5">
+            <line x1="200" y1="30" x2="200" y2="370"/>
+            <line x1="30" y1="200" x2="370" y2="200"/>
+            <line x1="80" y1="80" x2="320" y2="320"/>
+            <line x1="320" y1="80" x2="80" y2="320"/>
+            <line x1="115" y1="42" x2="285" y2="358"/>
+            <line x1="285" y1="42" x2="115" y2="358"/>
+            <line x1="42" y1="115" x2="358" y2="285"/>
+            <line x1="42" y1="285" x2="358" y2="115"/>
+          </g>
+          <g font-family="Cormorant Garamond, serif" font-size="16" fill="#A88347" text-anchor="middle" font-weight="400">
+            <text x="200" y="50">♈</text>
+            <text x="285" y="75">♉</text>
+            <text x="335" y="130">♊</text>
+            <text x="355" y="208">♋</text>
+            <text x="335" y="280">♌</text>
+            <text x="285" y="335">♍</text>
+            <text x="200" y="358">♎</text>
+            <text x="115" y="335">♏</text>
+            <text x="65" y="280">♐</text>
+            <text x="45" y="208">♑</text>
+            <text x="65" y="130">♒</text>
+            <text x="115" y="75">♓</text>
+          </g>
+          <g fill="#1C1812">
+            <circle cx="280" cy="140" r="3"/>
+            <circle cx="320" cy="220" r="3"/>
+            <circle cx="240" cy="290" r="3"/>
+            <circle cx="135" cy="265" r="3"/>
+            <circle cx="105" cy="175" r="3"/>
+            <circle cx="160" cy="100" r="3"/>
+          </g>
+          <g font-family="Cormorant Garamond, serif" font-size="14" fill="#1C1812" text-anchor="middle">
+            <text x="280" y="125">☉</text>
+            <text x="320" y="205">☽</text>
+            <text x="240" y="305">♀</text>
+            <text x="135" y="280">♂</text>
+            <text x="105" y="190">♃</text>
+            <text x="160" y="85">♄</text>
+          </g>
+          <circle cx="200" cy="200" r="3" fill="#A88347"/>
+        </svg>
+      </div>
+      <div class="explainer-text">
+        <div class="section-label">Your Birth Chart</div>
+        <h2>A snapshot of the <em>heavens</em> the moment you took your first breath.</h2>
+        <p>
+          Every planet—along with the Sun and Moon—was in a specific sign and house, 
+          creating a unique imprint that shapes how you move through the world.
+        </p>
+        <p class="highlight">
+          Your chart already holds the answers. You just need to learn how to read it.
+        </p>
+        <p>
+          Far beyond your Sun sign, your chart holds insight from the deeper work your 
+          soul is here to do, to how you thrive in your everyday life. This is your 
+          cosmic roadmap—guiding you back to yourself.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FREE GUIDE BANNER -->
+<section class="free-guide" id="guide">
+  <div class="stars" id="starsGuide"></div>
+  <div class="free-guide-content">
+    <div class="moon-decoration">
+      <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="30" cy="30" r="22" fill="none" stroke="#C9A86A" stroke-width="1"/>
+        <path d="M 30 8 A 22 22 0 0 1 30 52 A 16 22 0 0 0 30 8 Z" fill="#C9A86A"/>
+      </svg>
+    </div>
+    <div class="section-label">Free Resource</div>
+    <h2>The <em>Moon Energy</em> Reset Guide</h2>
+    <p>
+      A simple, step-by-step guide for working with the Moon to restore physically and emotionally. 
+      Drop your email and I'll send it to your inbox.
+    </p>
+    <a href="free-guide.html" class="btn-primary">Get the free guide</a>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="testimonials-header">
+      <div class="section-label">Kind Words</div>
+      <h2>What clients are <em>saying.</em></h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <span class="testimonial-mark">"</span>
+        <p>
+          I've always been a skeptic when it comes to astrology, but my Astro Snapshot 
+          session with Marianne completely changed my perspective. I walked away with 
+          so much clarity regarding my gifts and my purpose.
+        </p>
+        <div class="testimonial-author">Jennifer Stevens</div>
+      </div>
+      <div class="testimonial">
+        <span class="testimonial-mark">"</span>
+        <p>
+          Marianne writes the most beautiful reports that unlocked incredible insights 
+          about my calling. It inspired me to start writing again, and to honor my 
+          authentic self.
+        </p>
+        <div class="testimonial-author">Marilyn Manno</div>
+      </div>
+      <div class="testimonial">
+        <span class="testimonial-mark">"</span>
+        <p>
+          Marianne has a rare gift for explaining complex ideas with compassion and 
+          gentleness. She made astrology feel like a homecoming rather than something 
+          intimidating.
+        </p>
+        <div class="testimonial-author">A grateful client</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+  <div class="newsletter-content">
+    <div class="section-label">Monthly Letter</div>
+    <h2>Cosmic <em>insights</em> in your inbox.</h2>
+    <p>Monthly moon updates, transit forecasts, and gentle reflections—no spam, just soul.</p>
+    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('In the real site this would subscribe you!');">
+      <input type="email" placeholder="Your email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>☽ Soul Path Astrology Studio</h3>
+      <p>Soul-centered astrology readings with Marianne Hayes. Guiding you home to who you truly are.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Readings</h4>
+      <ul>
+        <li><a href="astro-snapshot.html">Astro Snapshot</a></li>
+        <li><a href="soul-blueprint.html">Soul Blueprint</a></li>
+        <li><a href="year-ahead.html">Year Ahead</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="https://www.instagram.com/soulpathastrostudio/">Instagram</a></li>
+        <li><a href="free-guide.html">Free Guide</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Get in Touch</h4>
+      <ul>
+        <li><a href="mailto:Marianne@SoulPathAstrologyStudio.com">Marianne@SoulPathAstrologyStudio.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Soul Path Astrology Studio</div>
+    <div>Designed with <em>intention.</em></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Astro Snapshot Reading — Soul Path Astrology Studio</title>
+<meta name="description" content="A focused, illuminating first look at the heart of your chart—perfect if you're new to astrology or want clarity in one rich conversation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="main-nav solid" id="mainNav">
+  <a href="index.html" class="logo">
+    <svg class="logo-mark" viewBox="0 0 80 100" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="logoSky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#3D2A5C"/>
+          <stop offset="55%" stop-color="#5D3B6E"/>
+          <stop offset="85%" stop-color="#8C4A6B"/>
+          <stop offset="100%" stop-color="#3D2854"/>
+        </linearGradient>
+        <radialGradient id="saturnGrad" cx="40%" cy="40%" r="60%">
+          <stop offset="0%" stop-color="#E0C896"/>
+          <stop offset="100%" stop-color="#A88347"/>
+        </radialGradient>
+      </defs>
+      <path d="M 8 95 L 8 35 Q 8 5 40 5 Q 72 5 72 35 L 72 95 Z" fill="url(#logoSky)" stroke="#C9A86A" stroke-width="1.2"/>
+      <path d="M 12 92 L 12 36 Q 12 9 40 9 Q 68 9 68 36 L 68 92" fill="none" stroke="#C9A86A" stroke-width="0.4" opacity="0.5"/>
+      <g fill="#F1E8D2">
+        <circle cx="20" cy="22" r="0.6" opacity="0.7"/><circle cx="58" cy="18" r="0.5" opacity="0.6"/>
+        <circle cx="62" cy="32" r="0.8" opacity="0.9"/><circle cx="18" cy="38" r="0.5" opacity="0.6"/>
+        <circle cx="22" cy="55" r="0.7" opacity="0.7"/><circle cx="14" cy="70" r="0.5" opacity="0.5"/>
+        <circle cx="65" cy="58" r="0.6" opacity="0.7"/><circle cx="55" cy="68" r="0.5" opacity="0.6"/>
+      </g>
+      <g fill="#F1E8D2" opacity="0.95">
+        <path d="M 56 24 L 56.6 26 L 58.5 26.5 L 56.6 27 L 56 29 L 55.4 27 L 53.5 26.5 L 55.4 26 Z"/>
+        <path d="M 24 30 L 24.4 31.2 L 25.6 31.5 L 24.4 31.8 L 24 33 L 23.6 31.8 L 22.4 31.5 L 23.6 31.2 Z"/>
+        <path d="M 50 42 L 50.4 43 L 51.4 43.3 L 50.4 43.6 L 50 44.5 L 49.6 43.6 L 48.6 43.3 L 49.6 43 Z"/>
+      </g>
+      <ellipse cx="40" cy="45" rx="13" ry="2.5" fill="none" stroke="#C9A86A" stroke-width="0.9"/>
+      <ellipse cx="40" cy="45" rx="13" ry="2.5" fill="none" stroke="#DDBE7E" stroke-width="0.4" opacity="0.6"/>
+      <circle cx="40" cy="45" r="6.5" fill="url(#saturnGrad)"/>
+      <ellipse cx="40" cy="45" rx="13" ry="2.5" fill="none" stroke="#C9A86A" stroke-width="0.9" stroke-dasharray="9 30" stroke-dashoffset="-6"/>
+      <path d="M 9 82 Q 22 76 38 80 Q 52 84 71 78 L 71 95 L 9 95 Z" fill="#3D2854" opacity="0.6"/>
+      <path d="M 9 86 Q 22 82 38 84 Q 52 86 71 83" fill="none" stroke="#C9A86A" stroke-width="0.3" opacity="0.4"/>
+    </svg>
+    <div>
+      <div class="logo-text">Soul Path Astrology</div>
+      <span class="logo-sub">Soul Work · Birth Charts</span>
+    </div>
+  </a>
+  <button class="menu-toggle" id="menuToggle">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#readings">Readings</a></li>
+    <li><a href="free-guide.html">Free Guide</a></li>
+    <li><a href="index.html#testimonials">Praise</a></li>
+    <li><a href="#book" class="nav-cta">Book Now</a></li>
+  </ul>
+</nav>
+
+<!-- READING HERO -->
+<header class="reading-hero">
+  <div class="reading-hero-grid">
+    <div>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> · <a href="index.html#readings">Readings</a> · Astro Snapshot
+      </div>
+      <div class="section-label">A Focused Reading</div>
+      <h1 class="reading-title">Astro <em>Snapshot</em></h1>
+      <p class="reading-subtitle">A focused, illuminating first look at the heart of your chart—perfect if you're new to astrology or want clarity in one rich conversation.</p>
+      <div class="reading-meta">
+        <div class="meta-item"><span class="meta-label">Duration</span><span class="meta-value">60 min</span></div>
+        <div class="meta-item"><span class="meta-label">Format</span><span class="meta-value">Live, on Zoom</span></div>
+        <div class="meta-item"><span class="meta-label">Investment</span><span class="meta-value"><em>$125</em></span></div>
+      </div>
+      <a href="#book" class="btn-primary" style="background: var(--ink); color: var(--cream);">Book this reading</a>
+    </div>
+    <div class="reading-illustration">
+      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="ringGlow_astro-snapshot" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A88347" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#A88347" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- soft outer glow -->
+  <circle cx="200" cy="200" r="190" fill="url(#ringGlow_astro-snapshot)"/>
+  <!-- concentric rings -->
+  <circle cx="200" cy="200" r="170" fill="none" stroke="#A88347" stroke-width="0.6" opacity="0.55"/>
+  <circle cx="200" cy="200" r="140" fill="none" stroke="#A88347" stroke-width="0.4" opacity="0.4"/>
+  <circle cx="200" cy="200" r="105" fill="none" stroke="#A88347" stroke-width="0.4" opacity="0.4"/>
+  <circle cx="200" cy="200" r="70" fill="none" stroke="#A88347" stroke-width="0.4" opacity="0.5"/>
+  <!-- decorative tick marks around outer ring -->
+  <g stroke="#A88347" stroke-width="0.5" opacity="0.6">
+    <line x1="370.0" y1="200.0" x2="378.0" y2="200.0"/> <line x1="364.2073904691416" y1="243.99923766742853" x2="371.93479707945414" y2="246.0697900282487"/> <line x1="347.2243186433546" y1="285.0" x2="354.1525218736301" y2="289.0"/> <line x1="320.2081528017131" y1="320.2081528017131" x2="325.86500705120545" y2="325.86500705120545"/> <line x1="285.0" y1="347.22431864335454" x2="289.0" y2="354.15252187363006"/> <line x1="243.99923766742853" y1="364.2073904691416" x2="246.0697900282487" y2="371.93479707945414"/> <line x1="200.0" y1="370.0" x2="200.0" y2="378.0"/> <line x1="156.00076233257147" y1="364.2073904691416" x2="153.93020997175128" y2="371.93479707945414"/> <line x1="115.00000000000004" y1="347.2243186433546" x2="111.00000000000004" y2="354.1525218736301"/> <line x1="79.79184719828693" y1="320.2081528017131" x2="74.13499294879455" y2="325.86500705120545"/> <line x1="52.77568135664541" y1="285.0" x2="45.84747812636991" y2="289.0"/> <line x1="35.792609530858414" y1="243.9992376674286" x2="28.065202920545858" y2="246.06979002824875"/> <line x1="30.0" y1="200.00000000000003" x2="22.0" y2="200.00000000000003"/> <line x1="35.792609530858385" y1="156.00076233257147" x2="28.06520292054583" y2="153.9302099717513"/> <line x1="52.775681356645435" y1="114.99999999999999" x2="45.847478126369936" y2="110.99999999999999"/> <line x1="79.79184719828689" y1="79.79184719828693" x2="74.13499294879452" y2="74.13499294879455"/> <line x1="114.99999999999993" y1="52.775681356645464" x2="110.99999999999991" y2="45.847478126369964"/> <line x1="156.0007623325715" y1="35.792609530858385" x2="153.93020997175134" y2="28.06520292054583"/> <line x1="199.99999999999997" y1="30.0" x2="199.99999999999997" y2="22.0"/> <line x1="243.99923766742845" y1="35.79260953085836" x2="246.0697900282486" y2="28.06520292054583"/> <line x1="285.0" y1="52.775681356645435" x2="289.0" y2="45.847478126369936"/> <line x1="320.208152801713" y1="79.79184719828689" x2="325.86500705120545" y2="74.13499294879452"/> <line x1="347.22431864335454" y1="114.99999999999993" x2="354.15252187363" y2="110.99999999999991"/> <line x1="364.2073904691416" y1="156.00076233257147" x2="371.93479707945414" y2="153.9302099717513"/>
+  </g>
+  <!-- diagonal accent lines -->
+  <g stroke="#A88347" stroke-width="0.3" opacity="0.3">
+    <line x1="80" y1="80" x2="320" y2="320"/>
+    <line x1="320" y1="80" x2="80" y2="320"/>
+  </g>
+  <!-- center large symbol -->
+  <text x="200" y="220" font-family="Cormorant Garamond, serif" font-size="80" fill="#A88347" text-anchor="middle" font-weight="400">☉</text>
+  <!-- small ornamental stars -->
+  <g fill="#A88347" opacity="0.7">
+    <path d="M 100 100 L 102 108 L 110 110 L 102 112 L 100 120 L 98 112 L 90 110 L 98 108 Z"/>
+    <path d="M 300 100 L 301.5 106 L 307.5 107.5 L 301.5 109 L 300 115 L 298.5 109 L 292.5 107.5 L 298.5 106 Z"/>
+    <path d="M 300 300 L 302 308 L 310 310 L 302 312 L 300 320 L 298 312 L 290 310 L 298 308 Z"/>
+    <path d="M 100 300 L 101.5 306 L 107.5 307.5 L 101.5 309 L 100 315 L 98.5 309 L 92.5 307.5 L 98.5 306 Z"/>
+  </g>
+</svg>
+    </div>
+  </div>
+</header>
+
+<!-- WHAT TO EXPECT -->
+<section class="reading-content">
+  <div class="reading-content-inner">
+    <div class="section-label">What to Expect</div>
+    <h2>The reading, in a <em>nutshell.</em></h2>
+    
+          <p>The Astro Snapshot is where most people begin. In one focused hour, we'll explore the <strong>three pillars of your chart</strong>—your Sun, Moon, and Rising signs—and the soul calling woven through them.</p>
+          <p>This is astrology made tangible. Not abstract symbolism, but a conversation about <em>you</em>: how you're wired, what energizes you, and where your gifts want to be expressed in the world.</p>
+          <p>You'll leave with language for parts of yourself you've always sensed but never quite named—and a recording to return to whenever you need to remember.</p>
+        
+    
+    <div class="section-label" style="margin-top: 4rem;">What's Included</div>
+    <h2>Everything that comes <em>with you.</em></h2>
+    <div class="includes-grid">
+        <div class="include-item"><h4>A 60-minute live session</h4><p>We meet on Zoom for a focused conversation, recorded for you to keep.</p></div>
+        <div class="include-item"><h4>Your three pillars decoded</h4><p>Sun, Moon, and Rising—your conscious self, inner world, and how you show up.</p></div>
+        <div class="include-item"><h4>Soul calling overview</h4><p>A look at the North Node and what your chart points you toward.</p></div>
+        <div class="include-item"><h4>Follow-up email</h4><p>Personalized notes and reflection prompts sent within 48 hours.</p></div>
+    </div>
+    
+    <div class="section-label" style="margin-top: 4rem;">How It Works</div>
+    <h2>The journey, <em>step by step.</em></h2>
+    <ul class="process-list">
+        <li><h4>Book your session</h4><p>Choose a time that works for you and submit your birth details (date, exact time, place).</p></li>
+        <li><h4>Receive your prep email</h4><p>A gentle welcome with a few prompts to help you arrive present and curious.</p></li>
+        <li><h4>Meet on Zoom</h4><p>A flowing conversation—part guided reading, part dialogue. Recorded for you.</p></li>
+        <li><h4>Integrate</h4><p>You'll receive notes within 48 hours so the insights have a chance to settle.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- BOOKING CTA -->
+<section class="reading-book" id="book">
+  <div class="stars" id="starsBook"></div>
+  <div class="reading-book-content">
+    <div class="section-label" style="color: var(--gold-light); justify-content: center;">Ready to Begin</div>
+    <h2>Book your <em>Snapshot</em>.</h2>
+    <div class="price-tag">$125</div>
+    <div class="price-tag-sub">60 min · Live, on Zoom</div>
+    <p>Submit your birth details and choose a time. I'll be in touch within 24 hours to confirm.</p>
+    <a href="mailto:Marianne@SoulPathAstrologyStudio.com?subject=Booking%20-%20Astro Snapshot" class="btn-primary">Begin booking</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="faq-inner">
+    <div class="section-label">Good Questions</div>
+    <h2>Things you might be <em>wondering.</em></h2>
+      <div class="faq-item"><div class="faq-question">Do I need to know anything about astrology beforehand?</div><div class="faq-answer">Not a thing. I'll meet you exactly where you are. Skeptics, beginners, and long-time chart readers are all equally welcome.</div></div>
+      <div class="faq-item"><div class="faq-question">What if I don't know my exact birth time?</div><div class="faq-answer">Birth time matters most for your Rising sign and houses. If it's unknown, we can still do a meaningful reading focused on Sun and Moon—just let me know when you book.</div></div>
+      <div class="faq-item"><div class="faq-question">Is this private?</div><div class="faq-answer">Completely. Sessions are one-on-one and held in deep confidence. Recordings are for your eyes only.</div></div>
+      <div class="faq-item"><div class="faq-question">Can I bring specific questions?</div><div class="faq-answer">Yes—and I encourage it. The more specific you are about what's alive in your life, the more relevant the reading becomes.</div></div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>☽ Soul Path Astrology Studio</h3>
+      <p>Soul-centered astrology readings with Marianne Hayes. Guiding you home to who you truly are.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Readings</h4>
+      <ul>
+        <li><a href="astro-snapshot.html">Astro Snapshot</a></li>
+        <li><a href="soul-blueprint.html">Soul Blueprint</a></li>
+        <li><a href="year-ahead.html">Year Ahead</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="https://www.instagram.com/soulpathastrostudio/">Instagram</a></li>
+        <li><a href="free-guide.html">Free Guide</a></li>
+        <li><a href="index.html#testimonials">Testimonials</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Get in Touch</h4>
+      <ul>
+        <li><a href="mailto:Marianne@SoulPathAstrologyStudio.com">Marianne@SoulPathAstrologyStudio.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Soul Path Astrology Studio</div>
+    <div>Designed with <em>intention.</em></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
