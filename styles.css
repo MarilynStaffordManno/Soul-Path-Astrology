@@ -10,8 +10,11 @@
   --ink-soft: #4A4133;
   --ink-mute: #7A6F5C;
   --gold: #A88347;
-  --gold-light: #C9A86A;
-  --gold-bright: #DDBE7E;
+  --gold-light: #D4B260;
+  --gold-bright: #EBCD7E;
+  --gold-shimmer-deep: #8C6A2F;
+  --gold-shimmer-mid: #DDBC68;
+  --gold-shimmer-high: #F2DD92;
   --night: #2D2150;
   --night-deep: #1A0E33;
   --night-glow: #5D3B7C;
@@ -72,16 +75,28 @@ nav.main-nav.solid {
 .logo-text {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.04em;
-  color: var(--gold-light);
   line-height: 1;
-  transition: color 0.4s;
   white-space: nowrap;
+  background: linear-gradient(135deg, 
+    var(--gold-shimmer-deep) 0%, 
+    var(--gold-shimmer-mid) 35%, 
+    var(--gold-shimmer-high) 55%,
+    var(--gold-shimmer-mid) 75%,
+    var(--gold) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  filter: drop-shadow(0 1px 2px rgba(45,33,80,0.45));
+  transition: filter 0.4s;
 }
 
 nav.main-nav.scrolled .logo-text,
-nav.main-nav.solid .logo-text { color: var(--gold); }
+nav.main-nav.solid .logo-text {
+  filter: drop-shadow(0 1px 1px rgba(28,24,18,0.15));
+}
 
 .logo-sub {
   display: block;
@@ -91,12 +106,16 @@ nav.main-nav.solid .logo-text { color: var(--gold); }
   text-transform: uppercase;
   color: var(--gold-light);
   margin-top: 4px;
-  opacity: 0.8;
-  transition: color 0.4s;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(45,33,80,0.5);
+  transition: color 0.4s, text-shadow 0.4s;
 }
 
 nav.main-nav.scrolled .logo-sub,
-nav.main-nav.solid .logo-sub { color: var(--gold); }
+nav.main-nav.solid .logo-sub { 
+  color: var(--gold); 
+  text-shadow: none;
+}
 
 .nav-links {
   display: flex;
@@ -111,13 +130,17 @@ nav.main-nav.solid .logo-sub { color: var(--gold); }
   font-size: 0.78rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  font-weight: 400;
-  transition: color 0.4s, opacity 0.3s;
-  opacity: 0.85;
+  font-weight: 500;
+  transition: color 0.4s, opacity 0.3s, text-shadow 0.4s;
+  opacity: 0.95;
+  text-shadow: 0 1px 3px rgba(28,24,18,0.55);
 }
 
 nav.main-nav.scrolled .nav-links a,
-nav.main-nav.solid .nav-links a { color: var(--ink); }
+nav.main-nav.solid .nav-links a { 
+  color: var(--ink); 
+  text-shadow: none;
+}
 
 .nav-links a:hover { opacity: 1; color: var(--gold-light); }
 nav.main-nav.scrolled .nav-links a:hover,
@@ -249,8 +272,17 @@ nav.main-nav.solid .menu-toggle { color: var(--gold); }
 .hero h1 em {
   font-style: italic;
   font-weight: 400;
-  color: var(--gold-light);
   font-feature-settings: "swsh" 1;
+  background: linear-gradient(180deg, 
+    var(--gold-shimmer-high) 0%, 
+    var(--gold-bright) 35%,
+    var(--gold-light) 70%,
+    var(--gold) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  filter: drop-shadow(0 2px 12px rgba(221, 190, 126, 0.25));
 }
 
 .hero-tagline {
@@ -570,7 +602,6 @@ h2 em { font-style: italic; color: var(--gold); }
 }
 
 .service-card h3 em { font-style: italic; color: var(--gold); }
-.service-card.featured h3 em { color: var(--gold-light); }
 
 .service-price {
   font-family: 'Cormorant Garamond', serif;
@@ -715,7 +746,20 @@ h2 em { font-style: italic; color: var(--gold); }
 .free-guide .section-label::before { color: var(--gold-light); }
 
 .free-guide h2 { color: var(--cream); margin-bottom: 1.5rem; }
-.free-guide h2 em { color: var(--gold-light); }
+.free-guide h2 em,
+.reading-book h2 em,
+.service-card.featured h3 em {
+  background: linear-gradient(180deg, 
+    var(--gold-shimmer-high) 0%, 
+    var(--gold-bright) 35%,
+    var(--gold-light) 70%,
+    var(--gold) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  filter: drop-shadow(0 2px 10px rgba(221, 190, 126, 0.22));
+}
 
 .free-guide p {
   font-size: 1.1rem;
@@ -1113,7 +1157,6 @@ footer { background: var(--night-deep); color: var(--cream); padding: 5rem 3rem 
 .reading-book-content { position: relative; z-index: 1; max-width: 600px; margin: 0 auto; }
 
 .reading-book h2 { color: var(--cream); margin-bottom: 1rem; }
-.reading-book h2 em { color: var(--gold-light); }
 
 .reading-book p {
   color: rgba(241,232,210,0.85);
@@ -1125,9 +1168,18 @@ footer { background: var(--night-deep); color: var(--cream); padding: 5rem 3rem 
 .price-tag {
   font-family: 'Cormorant Garamond', serif;
   font-size: 3rem;
-  color: var(--gold-light);
   margin-bottom: 0.5rem;
   font-weight: 500;
+  background: linear-gradient(180deg, 
+    var(--gold-shimmer-high) 0%, 
+    var(--gold-bright) 40%,
+    var(--gold-light) 80%,
+    var(--gold) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  filter: drop-shadow(0 2px 14px rgba(221, 190, 126, 0.3));
 }
 
 .price-tag-sub {
