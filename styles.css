@@ -1,6 +1,6 @@
 /* ============================================================
    SOUL PATH ASTROLOGY — Shared Stylesheet
-   v7 — brighter cleaner metallic gold #D6B266
+   v10 — guide-hero readability pass (deeper gold + warmer overlay)
    ============================================================ */
 
 :root {
@@ -1213,9 +1213,9 @@ footer { background: var(--night-deep); color: var(--cream); padding: 5rem 3rem 
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(241,232,210,0.55) 0%,
-    rgba(241,232,210,0.3) 50%,
-    rgba(241,232,210,0.85) 100%
+    rgba(241,232,210,0.78) 0%,
+    rgba(241,232,210,0.55) 50%,
+    rgba(241,232,210,0.92) 100%
   );
 }
 
@@ -1223,8 +1223,29 @@ footer { background: var(--night-deep); color: var(--cream); padding: 5rem 3rem 
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 30% 30%, rgba(168,131,71,0.15), transparent 60%);
+  background: radial-gradient(ellipse at 30% 30%, rgba(168,131,71,0.18), transparent 60%);
 }
+
+/* Scoped legibility tweaks: page sits on a light photo, so push gold deeper */
+.guide-hero .section-label,
+.guide-hero h1 em {
+  color: var(--gold);
+}
+
+.guide-hero ~ * .section-label { /* leave the rest of the page alone */ }
+
+/* Nav over the guide hero: darken slightly until scroll triggers .scrolled */
+body.page-guide nav.main-nav:not(.scrolled) .logo-text { color: var(--gold); }
+body.page-guide nav.main-nav:not(.scrolled) .logo-sub { color: var(--gold); opacity: 1; }
+body.page-guide nav.main-nav:not(.scrolled) .nav-links a { 
+  color: var(--ink-soft); 
+  opacity: 1;
+}
+body.page-guide nav.main-nav:not(.scrolled) .nav-links a:hover { color: var(--gold); }
+body.page-guide nav.main-nav:not(.scrolled) .nav-cta { 
+  border-color: var(--ink-soft); 
+}
+body.page-guide nav.main-nav:not(.scrolled) .menu-toggle { color: var(--gold); }
 
 .guide-hero-content {
   position: relative;
